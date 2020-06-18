@@ -1,0 +1,52 @@
+/* * {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+*/
+
+body {
+    background:url("../pic/175452.jpg");
+    background-repeat: repeat-y;
+    background-size: 35% 35%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+a {
+    color:orangered;
+    text-decoration: none;
+}
+
+i.warning_info {
+    font-weight: bold;
+    color:red;
+}
+
+ul {
+    background-color: rgba(47, 79, 79, 0.048);
+    margin: 14px;
+    color: darkgreen;   /* à voir ... */
+    list-style-type:square;
+}
+
+div {
+    margin: 0px;
+}
+
+.code {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 105%;
+    background-color: darkslategrey;
+    color:white;
+}
+
+.legendes {
+    font-style: italic;
+}
+
+.darkred_text {
+    color: darkred;
+}
+
+#fin_page {
+    color: lightgrey;
+    font-style: italic;
+}
