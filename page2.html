@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Page de tests</title>
+    <meta charset=UTF-8" />
+    <style>
+        div[class^="br"] {color:blue}
+        div[class*="t"] {color:red}
+        ol li:nth-last-child(2) {color:palevioletred}
+        ol li:nth-child(3) {color:green}
+        input[type=checkbox]:checked+label {color:yellowgreen}
+    </style>
+</head>
+
+<body>
+
+    <div class="brasse">Texte dans un div de class brasse</div>
+    <div class="b56">Texte dans un div de class b56</div>
+    <div class="st45">Texte dans un div de class st45</div>
+    <div class="lo">Texte dans un div de class lo</div>
+    <ol>
+        <li>un</li>
+        <li>deux</li>
+        <li>trois</li>
+    </ol>
+    <form action="">
+        <input type="checkbox" id="cb_1"><label for="cb_1">1</label>
+        <input type="checkbox" id="cb_2"><label for="cb_2">2</label>
+        <input type="checkbox" id="cb_3"><label for="cb_3">3</label>
+    </form>
+</body>
+
+</html>

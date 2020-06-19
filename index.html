@@ -5,21 +5,57 @@
     <title>Page de tests</title>
     <meta charset=UTF-8" />
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/pic/rocket_icon.png">
 </head>
 
 <body>
 
     <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tr>
-            <td width="20%"></td> <!-- Colonne gauche vide -->
-            <td>
-
-                <nav style="color:midnightblue" style="margin-bottom:30px">Sections :
-                    <a href="#titre1">Partie 1</a> | <a href="#titre2">Partie 2</a> | <a href="#titre3">Partie 3</a> | <a href="#titre4">Partie 4</a>
-                </nav>
-
+            <td id="zone_en_tete" colspan="3">
+                <header>
+                    <nav>
+                        <ul class="menu">
+                            <img src="assets/pic/list_icon.png" alt="" height="13px">
+                            <li><a href="#titre1">Partie 1</a>
+                                <ul class="sous_menu">
+                                    <li><a href="#texte1">Texte</a></li>
+                                    <li><a href="#liste1">Liste</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#titre2">Partie 2</a></li>
+                            <li><a href="#titre3">Partie 3</a></li>
+                            <li><a href="#titre4">Partie 4</a></li>
+                        </ul>
+                        <!-- <a href="#titre1">Partie 1</a> | <a href="#titre2">Partie 2</a> | <a href="#titre3">Partie 3</a> | <a href="#titre4">Partie 4</a> -->
+                    </nav>
+                </header>
+            </td>
+        </tr>
+        <tr>
+            <td id="zone_menu_secondaire">
+                <div id="menu_secondaire">
+                    <ul>
+                        <li><a href="#texte1">Texte de la partie 1</a></li>
+                        <li><a href="#liste1">Liste de la partie 1</a></li>
+                        <li><a href="">dhghdghgh</a></li>
+                        <li><a href="">zerzer</a></li>
+                        <li><a href="">dsfdsf</a></li>
+                        <li><a href="">vbcvb</a></li>
+                        <li><a href="">dhghdghgh</a></li>
+                        <li><a href="">fdgdfgerger</a></li>
+                        <li><a href="">dhghdghgh</a></li>
+                        <li><a href="">bnvbnrtye</a></li>
+                        <li><a href="">dfgrgerger</a></li>
+                        <li><a href="">dhghdghgh</a></li>
+                        <li><a href="">ffdgdvdvf</a></li>
+                        <li><a href="">ertertert</a></li>
+                    </ul>
+                </div>
+            </td>
+            <td id="zone_contenu_page">
                 <h1 id="titre1">Titre de niveau 1 <img src="assets/pic/1star.jpg" alt="Star" width="25px"></h1>
-                <p>Curabitur volutpat tincidunt malesuada. Etiam venenatis nibh in nibh sollicitudin, ac dictum arcu sodales. Donec
+                <p><span id="texte1">Curabitur</span> volutpat tincidunt malesuada. Etiam venenatis nibh in nibh sollicitudin, ac dictum arcu sodales. Donec
                     tristique aliquam risus, fermentum semper quam fermentum eu. Sed ornare dolor sit amet massa consectetur, sit
                     amet placerat ex aliquam. In quis sodales arcu. Donec dictum lacus non hendrerit ornare. Duis ac libero ut nisl
                     iaculis gravida. Donec ut dignissim dolor. Integer faucibus sem nec dolor consequat commodo. Quisque fringilla
@@ -27,9 +63,14 @@
                     lectus nisl at tellus. Morbi sit amet est ac ex maximus consectetur vitae sed ante. Maecenas dapibus interdum
                     nisi, a sagittis felis pharetra porttitor. Nulla volutpat ex luctus eros rutrum sagittis. Mauris bibendum nisi
                     non mollis efficitur. </p>
-                <ul>
+                <ul class="liste_carres" id="liste1">
                     <li>vcxbvcbxcvb</li>
-                    <li>ergbfgxh</li>
+                    <li>ergbfgxh
+                        <ul>
+                            <li>sdfdsqfdsf</li>
+                            <li>vuuivcbu</li>
+                        </ul>
+                    </li>
                     <li>ioupmlkjs</li>
                 </ul>
                 <p>Si ça vous soûle déja : <a href="#fin_page">aller à la fin de la page</a></p>
@@ -57,6 +98,9 @@
                     condimentum est interdum consequat ac nec elit. Nullam blandit lacus augue, in aliquet nunc fermentum et.
                     Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi consectetur, risus ut maximus iaculis, metus
                     orci venenatis risus, eu pellentesque risus lorem a ante. </p>
+                <a href="https://fr.wikipedia.org/wiki/Galaxie" target="_blank">
+                    <img src="https://www.nasa.gov/sites/default/files/thumbnails/image/potw2023a.jpg" alt="Galaxie" width="100%" title="Ceci est une galaxie">
+                </a>
 
                 <h4 id="titre4">Titre de niveau 4</h4>
                 <p>Pellentesque ac augue sit amet metus egestas mattis. Curabitur iaculis mauris risus, eget pretium metus efficitur
@@ -64,19 +108,51 @@
                     ornare, est urna dictum nunc, eget auctor purus odio mattis ante.</div> Vivamus sodales arcu eu purus rhoncus, eget
                     elementum neque cursus. Praesent in hendrerit ligula, et posuere est. Mauris et ante ac augue sagittis finibus.
                     Aliquam vel finibus nulla. Cras facilisis enim tortor, ac ultricies purus consectetur in. </p>
+                   
+                    <table id="tableau_photos" border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td>
+                                <a href="assets/pic/kleine-scheidegg-murmeltier-eiger-moench-jungfrau-sommer.jpg">
+                                <img src="assets/pic/kleine-scheidegg-murmeltier-eiger-moench-jungfrau-sommer.jpg" alt="Montagne" title="Montagne"></a>
+                            </td>
+                            <td>
+                                <a href="assets/pic/9636211347_ec24749e5b_o.jpg">
+                                <img src="assets/pic/9636211347_ec24749e5b_o.jpg" alt="Montagne" title="Montagne"></a>
+                            </td>
+                            <td>
+                                <a href="assets/pic/Dolomiti-2-DAN-1-83-4.jpg">
+                                <img src="assets/pic/Dolomiti-2-DAN-1-83-4.jpg" alt="Montagne" title="Montagne"></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="assets/pic/IMG_2230[1].jpg">
+                                <img src="assets/pic/IMG_2230[1].jpg" alt="Montagne" title="Montagne"></a>
+                            </td>
+                            <td>
+                                <a href="assets/pic/IMG_2229[1].jpg">
+                                <img src="assets/pic/IMG_2229[1].jpg" alt="Montagne" title="Montagne"></a>
+                            </td>
+                            <td>
+                                <a href="assets/pic/IMG_2231[1].jpg">
+                                <img src="assets/pic/IMG_2231[1].jpg" alt="Montagne" title="Montagne"></a>
+                            </td>
+                        </tr>
+                    </table>
 
-                <h5>Titre de niveau 5</h5>
+                <h5 id="titre5">Titre de niveau 5</h5>
                 <p>Nullam eget ex a enim convallis interdum. Donec egestas placerat tempus. Sed vulputate quis ipsum quis vehicula.
                     Aliquam rutrum sollicitudin consequat. Phasellus vel cursus mi. Suspendisse congue orci sed nisl viverra, id
                     lobortis erat cursus. Nulla facilisi. Pellentesque et sapien eget sapien interdum ornare ac a elit. Nullam
                     tortor nisi, bibendum a tellus ac, aliquet tempus ipsum. Pellentesque imperdiet massa in augue ultricies, et
                     imperdiet neque lacinia. Vestibulum aliquet mi est, ac vulputate purus accumsan a. In hac habitasse platea
                     dictumst. Nam venenatis aliquet massa hendrerit elementum. </p>
-                <table border="1" style="width:100%; text-align:center" height="80px" cellpadding="10px" cellspacing="0px">
+                <div class="titres_tableau">Titre du tableau</div>
+                <table border="1" width="100%" style="text-align:center" height="80px" cellpadding="10px" cellspacing="0px">
                     <tr>
                         <th rowspan="2"></th>
-                        <th colspan="2">En millions d'euros</th>
-                        <th rowspan="2">2015 en €/hab</th>
+                        <th colspan="2">En millions de secondes</th>
+                        <th rowspan="2">°C/hab</th>
                     </tr>
                     <tr>
                         <th>2014</th>
@@ -100,6 +176,64 @@
                     ornare, est urna dictum nunc, eget auctor purus odio mattis ante. Vivamus sodales arcu eu purus rhoncus, eget
                     elementum neque cursus. Praesent in hendrerit ligula, et posuere est. Mauris et ante ac augue sagittis finibus.
                     Aliquam vel finibus nulla. Cras facilisis enim tortor, ac ultricies purus consectetur in. </p>
+                    <div class="titres_tableau">Références bibliographiques :</div>
+                    <table id="ref_biblio" border="1" cellpadding="10px" cellspacing="0px">
+                        <tr>
+                            <th>Auteur</th>
+                            <th>Titre</th>
+                            <th><span class="annee_biblio">Année</span></th>
+                        </tr>
+                        <tr>
+                            <td>Jacques</td>
+                            <td>Le ruisseau</td>
+                            <td><span class="annee_biblio">1802</span></td>
+                        </tr>
+                        <tr>
+                            <td>Pierre</td>
+                            <td>Le ruisseau II</td>
+                            <td><span class="annee_biblio">1802</span></td>
+                        </tr>
+                        <tr>
+                            <td>Jean</td>
+                            <td>Le ruisseau III</td>
+                            <td><span class="annee_biblio">1802</span></td>
+                        </tr>
+                        <tr>
+                            <td>Jean-Jacques</td>
+                            <td>Le ruisseau IV</td>
+                            <td><span class="annee_biblio">1802</span></td>
+                        </tr>
+                        <tr>
+                            <td>Jacques-Pierre</td>
+                            <td>Le ruisseau V</td>
+                            <td><span class="annee_biblio">1802</span></td>
+                        </tr>
+                        <tr>
+                            <td>Pierre-Jacques</td>
+                            <td>Le ruisseau VI</td>
+                            <td><span class="annee_biblio">1802</span></td>
+                        </tr>
+                        <tr>
+                            <td>Jacques-Jean</td>
+                            <td>Le ruisseau VII</td>
+                            <td><span class="annee_biblio">1802</span></td>
+                        </tr>
+                        <tr>
+                            <td>Pierre-Jean</td>
+                            <td>Le ruisseau VIII</td>
+                            <td><span class="annee_biblio">1803</span></td>
+                        </tr>
+                        <tr>
+                            <td>Jean-Pierre</td>
+                            <td>Le ruisseau IX</td>
+                            <td><span class="annee_biblio">1802</span></td>
+                        </tr>
+                        <tr>
+                            <td>Hugues</td>
+                            <td>Le ruisseau : le retour</td>
+                            <td><span class="annee_biblio">2020</span></td>
+                        </tr>
+                    </table>
 
                 <p><b>Si ce sujet vous passionne, inscrivez vous :</b><br>
                 <form action="mailto:rprunet@sii.fr">
@@ -124,13 +258,12 @@
                 <div id="fin_page">Fin de la page</div>
             
             </td>
-            <td width="20%"></td> <!-- Colonne droite vide -->
         </tr>
     </table>
 
     <footer style="float: right">
-        <img src="assets/pic/pouce_vert.png" alt="Star" width="30px">
-        <a href="index_old.html" title="Clique au lieu de trainer !">Lien vers l'autre page</a> | 
+        <a href="https://fr.wikipedia.org/wiki/Like" target="_blank"><img src="assets/pic/pouce_vert.png" alt="Star" width="30px"></a>
+        <a href="page1.html" title="Clique au lieu de trainer !">Lien vers l'autre page</a> | 
         <a href="https://www.w3schools.com/" target="_blank">w3schools</a> | 
         <a href="assets/documents/Cours_Cyber.pdf">Lien vers le doc Cyber Sécu</a> | 
         <a href="mailto:rprunet@sii.fr">Me contacter</a><br>

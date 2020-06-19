@@ -8,18 +8,16 @@
 body {
     background: url("../pic/175452.jpg");
     background-repeat: repeat-y;
-    background-size: 12% 300px;
+    background-size: 35% 35%;
     font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
 }
 
 div {
     margin: 0px;
-    padding: 0px;
 }
 
 nav {
     margin-bottom: 30px;
-    margin-left: 50px;
     height: 40px;
 }
 
@@ -28,6 +26,7 @@ nav {
 }
 
 .menu>li {
+    position: static;
     display: inline-block;
     padding-left: 10px;
     border-bottom: 4px solid rgba(255, 255, 255, 0);
@@ -45,32 +44,11 @@ nav {
     display: none;
     position: absolute;
     top: 50px;
-    left: 80px;
+    left: 22%;
     width: 100px;
     overflow: hidden;
+    background-color: white;
     list-style-type: none;
-}
-
-#zone_menu_secondaire {
-    width: 20%;
-    padding-left: 50px;
-    position: relative;
-}
-
-#menu_secondaire {
-    position: absolute;
-    top: 10px;
-    left: 80px;
-    width: 200px;  
-}
-
-#menu_secondaire>ul {
-    list-style-type: square;
-}
-
-#zone_contenu_page {
-    padding-left: 3%;
-    padding-right: 15%;
 }
 
 
@@ -85,20 +63,8 @@ a:focus {
     text-decoration: underline;
 }
 
-a:visited {
-    text-decoration: line-through;
-}
-
 
 /* Styles des textes et listes */
-
-h1 {
-    color: rgba(0, 0, 0, 0.918);
-}
-
-h5+p {
-    color: darkblue;
-}
 
 u.warning_info {
     font-weight: bold;
@@ -109,7 +75,7 @@ u.warning_info {
     background-color: rgba(47, 79, 79, 0.027);
     margin: 14px;
     color: darkgreen;   /* à voir... */
-    list-style-type: disc;
+    list-style-type: square;
 }
 
 .code {
@@ -140,31 +106,4 @@ u.warning_info {
 #fin_page {
     color: lightgrey;
     font-style: italic;
-}
-
-#tableau_photos {
-    width: 100%;
-    background-color: black;
-    border: 2px solid black;
-}
-
-#tableau_photos img {
-    width: 100%;
-}
-
-table#ref_biblio {
-    width: 100%;
-    text-align: center;
-}
-
-table#ref_biblio td:first-child {
-    text-decoration: underline;
-}
-
-table#ref_biblio td:nth-child(2) {
-    font-weight: bold;
-}
-
-.annee_biblio {
-    color: grey;
 }
