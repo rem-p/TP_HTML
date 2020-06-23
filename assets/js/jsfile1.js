@@ -93,6 +93,7 @@ function fct8() {
 }
 
 function fct9() {
+    // Exercice 3
     for(i=0 ; i<=10 ; i++) {
        i%2==0 ? console.log(i) : {}; 
     }
@@ -107,6 +108,7 @@ function fct10() {
 
 function fct11() {
 
+    // Exercice 1
     msg = "<p>";
     for (i=1; i<=100; i++) {
         msg = msg + i + ", ";
@@ -137,6 +139,7 @@ function fct11() {
     msg = msg + "</div>";
     document.write(msg);
 
+    // Exercice 2
     var tab = [5, 2, 3, 4, 1];
     var somme = 0;
     for(var elt of tab) {
@@ -145,6 +148,7 @@ function fct11() {
     var tabmean = somme/tab.length;
     document.write("<p>[" + tab + "]<br>Moyenne : " + tabmean + "</p>");
 
+    // Exercice 4
     var tab_eleves = [["David", 80], ["Vinoth", 77], ["Divya", 88], ["Isitha", 95], ["Thomas", 68]];
     var somme_notes=0;
     for(i=0; i<tab_eleves.length; i++) {
@@ -187,6 +191,7 @@ function fct12(temperature) {
     document.write(msg);
 }
 
+// Exercice 5
 var tab_noms = [];
 
 function ajouter_nom() {
